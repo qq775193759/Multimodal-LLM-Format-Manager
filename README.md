@@ -1,1 +1,3 @@
-# Multimodal-LLM-Format-Manager-
+# Multimodal-LLM-Format-Manager
+
+A specialized toolkit designed to unify and streamline data formatting for multimodal large language model (MLLM) training and inference workflows. This comprehensive solution addresses the critical challenge of managing diverse data formats across text, images, actions, and other modalities, ensuring seamless compatibility throughout the entire AI development lifecycle.
