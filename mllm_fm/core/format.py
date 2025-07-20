@@ -12,7 +12,7 @@ def variable_parser(expr, frame_idx):
     if indexed_match:
         name = indexed_match.group(1)
         index_expr = indexed_match.group(2)
-        index_expr.format(i = frame_idx)
+        index_expr = index_expr.format(i = frame_idx)
         return name, [eval(index_expr)]
     else:
         return expr, []
@@ -51,5 +51,8 @@ class FormatBase:
     def format_all_data(self, data):
         pass
 
-
-
+if __name__ == '__main__':
+    a = {'input':'task data[{i}-1] data[{i}]'}
+    data = {'data':[[1,2,3]], 'task':['a','b']}
+    af = FormatBase(a)
+    print(af.format_frame_data(data, 0, 0))
